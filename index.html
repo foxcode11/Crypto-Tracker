@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        table,td,th{
+            border: 2px solid black;
+        }
+        body{
+            background-color: #EAC7C7;
+        }
+        tr{
+            background-color:#F8F4EA;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="col-md-7 text-center">Crypto Tracker</h1>
+            <h4 class="col-md-7 text-center">by Deepak Patel</h4>
+            <div class="col-md-6 row justify-content-center">
+                <div class="col-10">
+                    <form action="" id="searchForm">
+                        <div class="form-row">
+                            <div class="form-group col-12">  
+                                <label for="abc"><strong>Coin Type</strong></label>
+                                <select name="coinType" class="form-control"id="abc">
+                                    <option value="bitcoin">Bitcoin-USD</option>
+                                    <option value="dogecoin">Dogecoin-USD</option>
+                                    <option value="ethereum">Ethereum-USD</option>
+                                    <option value="tether">Tether-USD</option>
+                                    <option value="polkadot">Polkadot-USD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn col-12 btn-primary"style="margin-top: 5px;">Get Price</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 row justify-content-center text-center">
+                <table class="col-md-7 m-2"  id="tableResult">
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
